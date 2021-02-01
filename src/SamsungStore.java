@@ -1,4 +1,6 @@
+import GalaxyPhone.GalaxyPhone;
 import GalaxyTab.GalaxyTab;
+import ICelular.ICelular;
 import IComputadora.IComputadora;
 import ITablet.ITablet;
 import NotebookOdyssey.NotebookOdyssey;
@@ -19,6 +21,11 @@ public class SamsungStore implements IAbstractFactory{
     @Override
     public ITablet crearTablet() {
         return new GalaxyTab();
+    }
+
+    @Override
+    public ICelular crearCelular() {
+        return new GalaxyPhone();
     }
 
     public static int getNumComputadorasVendidas() {

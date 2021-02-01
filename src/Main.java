@@ -1,3 +1,4 @@
+import ICelular.ICelular;
 import IComputadora.IComputadora;
 import jdk.swing.interop.SwingInterOpUtils;
 
@@ -22,6 +23,10 @@ public class Main {
         System.out.println(SamsungStore.getNumComputadorasVendidas());
 
         System.out.println("Tienda");
+
+        MacStore cell = new MacStore();
+        ICelular myCell = cell.crearCelular();
+        System.out.println(myCell);
 
     }
 

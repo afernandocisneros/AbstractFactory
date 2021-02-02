@@ -33,6 +33,9 @@ public class Main {
         IReloj miReloj = reloj.crearReloj();
         System.out.println(miReloj);
 
+        System.out.println("Probando conexion con Jenkins");
+        System.out.println("Nueva prueba");
+
     }
 
 }

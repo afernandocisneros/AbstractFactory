@@ -1,6 +1,8 @@
+import AppleWatch.AppleWatch;
 import ICelular.ICelular;
 import IComputadora.IComputadora;
 import IPhone.IPhone;
+import IReloj.IReloj;
 import ITablet.ITablet;
 
 public class MacStore implements IAbstractFactory{
@@ -18,5 +20,10 @@ public class MacStore implements IAbstractFactory{
     @Override
     public ICelular crearCelular() {
         return new IPhone();
+    }
+
+    @Override
+    public IReloj crearReloj() {
+        return new AppleWatch();
     }
 }

@@ -1,5 +1,6 @@
 import ICelular.ICelular;
 import IComputadora.IComputadora;
+import IReloj.IReloj;
 import jdk.swing.interop.SwingInterOpUtils;
 
 public class Main {
@@ -27,6 +28,10 @@ public class Main {
         MacStore cell = new MacStore();
         ICelular myCell = cell.crearCelular();
         System.out.println(myCell);
+
+        SamsungStore reloj = new SamsungStore();
+        IReloj miReloj = reloj.crearReloj();
+        System.out.println(miReloj);
 
     }
 
